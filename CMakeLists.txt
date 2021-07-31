@@ -8,7 +8,7 @@ set(CMAKE_CXX_STANDARD 17)
 
 pico_sdk_init()
 
-add_executable(snake main.c st7735.c)
+add_executable(snake main.c st7735.c snake.c)
 target_link_libraries(snake pico_stdlib hardware_spi)
 
 pico_add_extra_outputs(snake)
